@@ -7,6 +7,16 @@
         @apply scroll-smooth
     }
     body{
-        @apply text-fs-400 font-inter text-black bg-custom-white overflow-x-hidden tracking-normal leading-normal 
+        @apply text-fs-400 font-inter text-black bg-custom-white overflow-x-hidden tracking-normal leading-normal min-h-screen
+    }
+}
+
+@layer utilities{
+    .custom-container{
+        @apply mt-[1rem] px-[1rem]
+    }
+
+    .heading{
+        @apply text-fs-800 font-bold leading-[1]
     }
 }

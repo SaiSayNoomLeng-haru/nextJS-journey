@@ -372,6 +372,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiVanVan extends Struct.CollectionTypeSchema {
   collectionName: 'vans';
   info: {
+    description: '';
     displayName: 'van';
     pluralName: 'vans';
     singularName: 'van';
@@ -391,6 +392,7 @@ export interface ApiVanVan extends Struct.CollectionTypeSchema {
     name: Schema.Attribute.String;
     price: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
+    type: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

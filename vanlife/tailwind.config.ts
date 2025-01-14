@@ -10,6 +10,7 @@ export default {
     extend: {
       colors: {
         'custom-black-100' : '#252525',
+        'custom-orange': '#ff8c38',
         'custom-black-900': '#161616',
         'custom-white': '#fff7ed',
         'custom-gray': '#aaaaaa',
@@ -22,10 +23,12 @@ export default {
         'inter': ['var(--font-inter)']
       },
       fontSize: {
-        'fs-900' : '2rem',
-        'fs-800': '1.584rem',
-        'fs-700' : '1.25rem',
-        'fs-400': '1rem'
+        'fs-900': '2.5rem',
+        'fs-800' : '2rem',
+        'fs-700': '1.584rem',
+        'fs-600' : '1.25rem',
+        'fs-400': '1rem',
+        'fs-300': '0.6rem'
       },
       screens: {
         'md': '35em',

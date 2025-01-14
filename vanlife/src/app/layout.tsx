@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from "./_ui/fonts";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "VanLife",
@@ -15,9 +17,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable}`}
+        className={`${inter.variable} space-y-3`}
       > 
-        {children}
+        <Navbar />
+        <main className="custom-container min-h-[85vh]">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

@@ -18,9 +18,14 @@
         "name": "next"
       }
     ],
+    "baseUrl": "src/",
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["./src/*"],
+      "@/components/*": ["app/_ui/components/*"],
+      "@/ui": ["app/_ui"],
+      "@/library" : ["app/_lib"],
+      "@/api": ["app/_api/route.ts"]
+    },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
