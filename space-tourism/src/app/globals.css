@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-barlow: 'Barlow', sans-serif;
+    --font-bellefair: 'Bellefair', serif;
+    --font-barlow-condensed: 'Barlow Condensed', sans-serif;
+  }
+
+@layer base{
+    html{
+        @apply scroll-smooth
+    }
+    body{
+        @apply leading-normal tracking-normal min-h-screen text-fs-400 font-condensed
+    }
+}
